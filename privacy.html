@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TrustStars — Privacy Policy</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <a href="./">← TrustStars Legal</a>
+        <h1>Privacy Policy</h1>
+        <p class="lede">Last updated 2026-06-04 · Effective 2026-06-04</p>
+    </header>
+
+    <div class="card">
+        <p>This Privacy Policy describes how the TrustStars iOS app and the TrustStars Chrome
+        extension ("TrustStars", "we") handle information. TrustStars helps you judge the star rating you
+        can actually trust by applying the Wilson confidence score to a product's average rating and
+        number of reviews.</p>
+
+        <p><strong>In short: TrustStars collects no data about you, contains no analytics, advertising,
+        or tracking, and sends nothing to us or any third party. Everything stays on your device.</strong></p>
+
+        <h2>What we do not collect</h2>
+        <ul>
+            <li>Your name, email, phone number, address, or any contact info.</li>
+            <li>Your location.</li>
+            <li>Your photos, contacts, microphone, camera, or other device data.</li>
+            <li>Advertising identifiers, device fingerprints, or any tracking identifiers.</li>
+            <li>Usage, browsing, or interaction analytics. There is no analytics SDK, crash-reporting
+                SDK, advertising SDK, or marketing SDK of any kind.</li>
+        </ul>
+
+        <h2>The iOS app</h2>
+        <p>The app stores the products you add to compare (a name you type, the average stars, and the
+        review count) on your device only, via Apple's standard <code>UserDefaults</code>. It makes no
+        network connections. This data is removed when you delete the app.</p>
+
+        <h2>The Chrome extension</h2>
+        <p>The extension reads the average rating and review-count numbers that are <strong>already
+        displayed</strong> on a product page you are viewing (for example, an Amazon product page) in
+        order to calculate and show the confidence-adjusted "trusted score." That reading happens
+        entirely within your browser. The comparison list you build is stored locally on your device via
+        <code>chrome.storage.local</code>. The extension makes no network requests and transmits nothing
+        to us or anyone else.</p>
+
+        <h2>Browser permissions</h2>
+        <ul>
+            <li><strong>activeTab / scripting</strong> — to read the rating shown on the current product
+                page when you click "Scan this page."</li>
+            <li><strong>storage</strong> — to save your comparison list locally on your device.</li>
+            <li><strong>Host access (e.g. amazon.*)</strong> — to read the visible rating and review
+                count on supported product pages so the badge can be shown.</li>
+        </ul>
+        <p>These permissions are used solely to read publicly displayed rating numbers and to store your
+        list locally. No page content or personal information is collected or sent anywhere.</p>
+
+        <h2>Third parties</h2>
+        <p>TrustStars integrates no third-party services, SDKs, or trackers. We do not share, sell, or
+        rent any information — because there is nothing to share.</p>
+
+        <h2>Children</h2>
+        <p>TrustStars is a general-audience tool. It is not directed at children and we do not knowingly
+        collect data from anyone.</p>
+
+        <h2>Your rights</h2>
+        <p>Because TrustStars collects no personal information, there is no record for us to access,
+        correct, or delete. To remove everything stored on your device, delete the app or remove the
+        extension from your browser.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy. The "Last updated" date above reflects the most recent change.</p>
+
+        <h2>Contact</h2>
+        <p>For privacy questions, write to
+        <a href="mailto:leetsyplakov@gmail.com">leetsyplakov@gmail.com</a>.</p>
+    </div>
+
+    <footer>
+        Source for this document:
+        <a href="https://github.com/leetsyplakov/TrustStars-policies/blob/main/privacy.html" target="_blank" rel="noopener">github.com/leetsyplakov/TrustStars-policies</a>.
+    </footer>
+</div>
+</body>
+</html>
