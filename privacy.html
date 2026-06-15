@@ -11,7 +11,7 @@
     <header>
         <a href="./">← TrustStars Legal</a>
         <h1>Privacy Policy</h1>
-        <p class="lede">Last updated 2026-06-04 · Effective 2026-06-04</p>
+        <p class="lede">Last updated 2026-06-14 · Effective 2026-06-14</p>
     </header>
 
     <div class="card">
@@ -20,18 +20,22 @@
         can actually trust by applying the Wilson confidence score to a product's average rating and
         number of reviews.</p>
 
-        <p><strong>In short: TrustStars collects no data about you, contains no analytics, advertising,
-        or tracking, and sends nothing to us or any third party. Everything stays on your device.</strong></p>
+        <p><strong>In short: TrustStars does its work entirely on your device, contains no analytics,
+        advertising, or tracking, and does not monitor your browsing. The only information that ever
+        leaves your device is a site suggestion you choose to submit using the optional
+        "Suggest a site" form.</strong></p>
 
         <h2>What we do not collect</h2>
         <ul>
-            <li>Your name, email, phone number, address, or any contact info.</li>
+            <li>Your browsing history, the pages you visit, or the products you view.</li>
             <li>Your location.</li>
             <li>Your photos, contacts, microphone, camera, or other device data.</li>
             <li>Advertising identifiers, device fingerprints, or any tracking identifiers.</li>
             <li>Usage, browsing, or interaction analytics. There is no analytics SDK, crash-reporting
                 SDK, advertising SDK, or marketing SDK of any kind.</li>
         </ul>
+        <p>We do not collect your email or any contact information <em>unless</em> you voluntarily type it
+        into the "Suggest a site" form and submit it (see below).</p>
 
         <h2>The iOS app</h2>
         <p>The app stores the products you add to compare (a name you type, the average stars, and the
@@ -42,33 +46,51 @@
         <p>The extension reads the average rating and review-count numbers that are <strong>already
         displayed</strong> on a product page you are viewing (for example, an Amazon product page) in
         order to calculate and show the confidence-adjusted "trusted score." That reading happens
-        entirely within your browser. The comparison list you build is stored locally on your device via
-        <code>chrome.storage.local</code>. The extension makes no network requests and transmits nothing
-        to us or anyone else.</p>
+        entirely within your browser and is never transmitted anywhere. The comparison list you build,
+        your settings, and the "wrong prediction" memory (a small list of page patterns you've marked as
+        incorrect) are all stored locally on your device via <code>chrome.storage.local</code> and are
+        never sent to us.</p>
+
+        <h2>"Suggest a site" (the only data we receive)</h2>
+        <p>The extension includes an optional form for suggesting a store you'd like supported. If — and
+        only if — you fill it in and press send, the extension transmits the information you entered to
+        our server at <code>api.pythonenthusiast.com</code>:</p>
+        <ul>
+            <li>the <strong>site URL</strong> you suggest;</li>
+            <li>your <strong>email address</strong> (so we can follow up);</li>
+            <li>an optional <strong>note</strong> you write.</li>
+        </ul>
+        <p>We use this solely to evaluate and add new sites. We do not sell it, share it with advertisers,
+        or use it for marketing, and our server records the submission's network (IP) address only to
+        enforce a basic anti-abuse limit (a maximum of 10 suggestions per day). You can ask us to delete a
+        suggestion you sent by emailing the address below. If you never use the form, nothing is sent.</p>
 
         <h2>Browser permissions</h2>
         <ul>
             <li><strong>activeTab / scripting</strong> — to read the rating shown on the current product
                 page when you click "Scan this page."</li>
-            <li><strong>storage</strong> — to save your comparison list locally on your device.</li>
-            <li><strong>Host access (e.g. amazon.*)</strong> — to read the visible rating and review
-                count on supported product pages so the badge can be shown.</li>
+            <li><strong>storage</strong> — to save your comparison list, settings, and prediction memory
+                locally on your device.</li>
+            <li><strong>Host access to supported stores (e.g. amazon.*)</strong> — to read the visible
+                rating and review count on supported product pages so the badge can be shown.</li>
+            <li><strong>Host access to api.pythonenthusiast.com</strong> — used only to deliver a
+                "Suggest a site" form submission when you send one.</li>
         </ul>
-        <p>These permissions are used solely to read publicly displayed rating numbers and to store your
-        list locally. No page content or personal information is collected or sent anywhere.</p>
+        <p>These permissions are used solely to read publicly displayed rating numbers, store your data
+        locally, and deliver suggestions you choose to send. No page content is collected or transmitted.</p>
 
         <h2>Third parties</h2>
-        <p>TrustStars integrates no third-party services, SDKs, or trackers. We do not share, sell, or
-        rent any information — because there is nothing to share.</p>
+        <p>TrustStars integrates no third-party analytics, advertising, or tracking SDKs. Site suggestions
+        you submit are received by our own server and are not shared, sold, or rented to anyone.</p>
 
         <h2>Children</h2>
         <p>TrustStars is a general-audience tool. It is not directed at children and we do not knowingly
-        collect data from anyone.</p>
+        collect data from children.</p>
 
         <h2>Your rights</h2>
-        <p>Because TrustStars collects no personal information, there is no record for us to access,
-        correct, or delete. To remove everything stored on your device, delete the app or remove the
-        extension from your browser.</p>
+        <p>Other than a "Suggest a site" submission you choose to send, TrustStars keeps no personal
+        information about you. To remove everything stored on your device, delete the app or remove the
+        extension from your browser. To request deletion of a suggestion you submitted, email us.</p>
 
         <h2>Changes to this policy</h2>
         <p>We may update this policy. The "Last updated" date above reflects the most recent change.</p>

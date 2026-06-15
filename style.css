@@ -59,3 +59,9 @@ footer a { color: var(--accent); }
 .list-card:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(42, 120, 245, 0.12); }
 .list-card h3 { margin: 0 0 4px; font-size: 17px; color: var(--accent); }
 .list-card p { margin: 0; color: var(--muted); font-size: 14px; }
+.sites { width: 100%; border-collapse: collapse; margin: 8px 0 4px; font-size: 14px; }
+.sites th, .sites td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.sites th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+.sites td:first-child { font-weight: 600; white-space: nowrap; padding-right: 18px; }
+.sites code { font-size: 12px; }
+.note { color: var(--muted); font-size: 13px; margin-top: 14px; }
